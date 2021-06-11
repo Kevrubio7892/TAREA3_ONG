@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perro Corage</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+
+<body class="fondo">
+    <div class="link-home">
+        <p>
+            <a href="{% url 'IND'%}"> HOME></a> 
+            <a href="{% url 'PERR'%}">PERROS</a> 
+        </p>
+    </div>
+
+    <div>
+        <table border="1" class="tabla-centro">
+            <tr>
+                <td><img src="{% static 'img/perro4.jpg' %}" alt="" width="250" height="260"></td>
+                <td style="padding: 10px;">Nombre: Coraje <br> Edad: 8 años <br> Genero: Macho <br> Esterilizado: Si
+                    <br> Nro. chip: 666</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

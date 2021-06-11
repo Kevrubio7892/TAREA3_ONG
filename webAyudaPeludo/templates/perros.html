@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayudaPeludo</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+
+<body class="fondo">
+    <div class="link-home">
+    <p> <a href="{% url 'IND'%}"><u> HOME> </u></a> </p>
+</div>
+    <div class="centro">
+        <h1> <b>
+                 PERROS EN ADOPCION 
+            </b> </h1>
+       
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Cupiditate, minima temporibus. Saepe quas
+                accusantium pariatur sunt consectetur iste alias, <br> odio quod voluptatum vero, necessitatibus nulla
+                at veritatis ullam quaerat ducimus.
+            </p>
+        
+
+        <h3>
+            NUESTROS PERROS QUE BUSCAN FAMILIA:
+        </h3>
+        
+            <table border="1" class="tabla-centro">
+                <tr>
+                    <td><img src="{% static 'img/perro2.jpg' %}" alt="" width="200" height="200"> </td>
+                    <td><a href="{% url 'SCO'%}">Scooby Doo</a></td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/perro3.jpg' %}" alt="" width="200" height="200"></td>
+                    <td><a href="{% url 'PAT'%}">Patan</a></td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/perro4.jpg' %}" alt="" width="200" height="200"></td>
+                    <td> <a href="{% url 'COR'%}"> Coraje </a></td>
+                </tr>
+
+            </table>
+       
+    </div>
+</body>
+
+</html>

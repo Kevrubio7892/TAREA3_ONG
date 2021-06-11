@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayudaPeludo</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+
+<body class="fondo">
+    <div class="link-home">
+        <a href="{% url 'IND'%}">
+            <p><u> HOME> </u></p>
+        </a>
+    </div>
+    <div class="centro">
+
+        <h1> <b>
+                GATOS EN ADOPCION
+            </b> </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Cupiditate, minima temporibus. Saepe quas
+            accusantium pariatur sunt consectetur iste alias, <br> odio quod voluptatum vero, necessitatibus nulla
+            at
+            veritatis ullam quaerat ducimus.
+        </p>
+
+
+        <h3>
+            NUESTROS GATOS QUE BUSCAN FAMILIA:
+        </h3>
+
+        <table border="1" class="tabla-centro">
+            <tr>
+                <td><img src="{% static 'img/gato2.jpg' %}" alt="" width="200" height="200"> </td>
+                <td><a href="{% url 'DOR'%}">Doraemon</a></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'img/gato3.jpg' %}" alt="" width="200" height="200"></td>
+                <td><a href="{% url 'TOM'%}">Tom</a></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'img/gato4.jpg' %}" alt="" width="200" height="200"></td>
+                <td> <a href="{% url 'GAR'%}"> Garfield </a></td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+
+</html>

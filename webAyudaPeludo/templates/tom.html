@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Tom</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+
+<body class="fondo">
+    <div  class="link-home">
+        <p> <a href="{% url 'IND'%}"> HOME> </a> <a href="{% url 'GAT'%}">GATOS</a> </p>
+    </div>
+    <br>
+    <table border="1" class="tabla-centro">
+        <tr>
+            <td><img src="{% static 'img/gato3.jpg' %}" alt="" width="250" height="260"></td>
+            <td>Nombre: Tom <br> Edad: 10 años <br> Genero: Macho <br> Esterilizado: Si <br> Nro. chip: 333221</td>
+        </tr>
+    </table>
+</body>
+
+</html>

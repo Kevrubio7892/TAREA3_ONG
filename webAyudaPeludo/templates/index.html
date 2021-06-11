@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayudaPeludo</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+
+<body class="fondo">
+    <div class="centro">
+
+        <h1> <b>
+                ONG - AYUDA A UN PELUDO
+            </b> </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Cupiditate, minima temporibus. Saepe quas
+            accusantium pariatur sunt consectetur iste alias, <br> odio quod voluptatum vero, necessitatibus nulla
+            at veritatis ullam quaerat ducimus.
+        </p>
+
+        <H2 class="centro">
+            NUESTROS INTEGRANTES:
+        </H2>
+        <P>
+            ° Persona 1 - Cargo 1
+        </P>
+        <P>
+            ° Persona 2 - Cargo 2
+        </P>
+        <P>
+            ° Persona 3 - Cargo 3
+        </P>
+        <P>
+            ° Persona 3 - Cargo 4
+        </P>
+        <h3>
+            NUESTRAS SECCIONES DE AYUDA
+        </h3>
+
+        <table border="1" class="tabla-centro">
+            <tr>
+                <td> <img src="{% static 'img/gato1.jpg' %}" alt="" width="200" height="200"></td>
+                <td> <u> <a href="{% url 'GAT' %}"> Gatos </a></u></td>
+            </tr>
+            <tr>
+                <td><img src="{% static 'img/perro1.jpg' %}" alt="" width="200" height="200"></td>
+                <td><u> <a href="{% url 'PERR'%}"> Perros </a> </u></td>
+            </tr>
+
+        </table>
+
+
+    </div>
+</body>
+
+</html>
